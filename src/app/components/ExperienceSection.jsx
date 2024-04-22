@@ -5,13 +5,6 @@ export const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      title: "Internship | May 2022",
-      sub_title: "Junior Developer",
-      text: "Proposed and developed an intern management system for Bitshareslabs Inc.",
-      skills: ["php", "html", "css", "js"],
-    },
-    {
-      id: 2,
       title: "Bitshareslabs Inc. | November 2022 - Present",
       sub_title: "Front-end Developer - Full-stack Developer",
       text: "Developer and designer for various web projects such as kolabspace, cryptosavers club, bitsharelabs, blincph and bibeverse. Also developed and maintained website for various clients such as densenlaw. ",
@@ -28,11 +21,18 @@ export const ExperienceSection = () => {
       ],
     },
     {
-      id: 1,
+      id: 2,
       title: "Freelance | March 2023",
       sub_title: "Front-end Developer",
       text: "Developed a portfolio website for a PNPA graduating student.",
       skills: ["html", "css", "js", "bootstrap"],
+    },
+    {
+      id: 3,
+      title: "Internship | May 2022",
+      sub_title: "Junior Developer",
+      text: "Proposed and developed an intern management system for Bitshareslabs Inc.",
+      skills: ["php", "html", "css", "js"],
     },
   ];
 
