@@ -6,11 +6,11 @@ export const RightSideProfile = () => {
     <aside className="md:fixed right-0 top-0 h-screen z-30 md:flex items-center justify-center xl:pr-24 lg:pr-20 md:pr-16 pr-10 max-xl:w-96 max-md:w-full">
       <div className="space-y-12">
         <div className=" space-y-4">
-          <span>Hi!</span>
-          <h1 className=" sm:text-4xl text-2xl font-bold">Kyle Gatudan</h1>
+          <span className="">Hi!</span>
+          <h1 className=" sm:text-5xl text-2xl font-bold">Kyle Gatudan</h1>
           <h4>Web Developer</h4>
           <p>I am a web developer based in Baguio City, Philippines. </p>
-          <ul>
+          <ul className=" space-y-2">
             <li>
               <Link href="#" className="flex items-center gap-3">
                 <span>01</span>
