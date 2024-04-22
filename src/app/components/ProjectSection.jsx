@@ -2,12 +2,13 @@ import React from "react";
 import { SectionHeader } from "./SectionHeader";
 import Link from "next/link";
 import img from "../../../public/dummy.png";
+import kishika from "../../../public/kishika.png";
 import Image from "next/image";
 
 const projects = [
   {
     id: 1,
-    name: "Project 1",
+    name: "Kishika Buff",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit obcaecati officiis nobis possimus maiores! Voluptas exercitationem rerum deleniti soluta aut deserunt ullam nulla quos animi, ipsum accusantium molestiae nesciunt ab?",
     techStack: ["php", "js", "html", "css"],
@@ -15,7 +16,7 @@ const projects = [
   },
   {
     id: 2,
-    name: "Project 2",
+    name: "Kishika Buff V2",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit obcaecati officiis nobis possimus maiores! Voluptas exercitationem rerum deleniti soluta aut deserunt ullam nulla quos animi, ipsum accusantium molestiae nesciunt ab?",
     techStack: ["node", "react", "css"],
@@ -23,7 +24,7 @@ const projects = [
   },
   {
     id: 3,
-    name: "Project 3",
+    name: "Kishika Buff V3",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit obcaecati officiis nobis possimus maiores! Voluptas exercitationem rerum deleniti soluta aut deserunt ullam nulla quos animi, ipsum accusantium molestiae nesciunt ab?",
     techStack: ["java", "spring", "html"],
@@ -55,7 +56,7 @@ export const ProjectSection = () => {
                 </svg>
               </div>
             </Link>
-            <div className="flex gap-3 items-center">
+            <div className="flex gap-3 md:flex-row flex-col items-center">
               <Image
                 src={project.images[0]}
                 width={420}
@@ -63,7 +64,7 @@ export const ProjectSection = () => {
                 alt={project.name}
                 className="rounded-lg border border-[#78EF9A]"
               />
-              <div className="flex flex-col gap-3">
+              <div className="flex md:flex-col max-sm:flex-col gap-3">
                 {project.images.slice(1).map((img, index) => (
                   <Image
                     key={index}
