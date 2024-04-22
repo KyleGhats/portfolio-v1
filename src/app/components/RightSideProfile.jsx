@@ -3,11 +3,11 @@ import React from "react";
 
 export const RightSideProfile = () => {
   return (
-    <aside className="fixed right-0 top-0 h-screen flex items-center pr-14">
+    <aside className="md:fixed right-0 top-0 h-screen z-30 md:flex items-center justify-center xl:pr-24 lg:pr-20 md:pr-16 pr-10 max-xl:w-96 max-md:w-full">
       <div className="space-y-12">
         <div className=" space-y-4">
           <span>Hi!</span>
-          <h1 className=" md:text-4xl text-xl font-bold">Kyle Gatudan</h1>
+          <h1 className=" sm:text-4xl text-2xl font-bold">Kyle Gatudan</h1>
           <h4>Web Developer</h4>
           <p>I am a web developer based in Baguio City, Philippines. </p>
           <ul>
