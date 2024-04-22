@@ -42,8 +42,21 @@ export const ExperienceSection = () => {
       <div className=" space-y-12">
         {experiences.map((experience, index) => (
           <div key={index} className=" space-y-4">
-            <h3>{experience.title}</h3>
-            <h4>{experience.sub_title}</h4>
+            <h3>
+              {/* Split the title at the '|' */}
+              {experience.title.split("|").map((part, partIndex) =>
+                partIndex === 0 ? (
+                  <span key={partIndex}>{`${part} | `}</span>
+                ) : (
+                  <span key={partIndex} style={{ fontStyle: "italic" }}>
+                    {part}
+                  </span>
+                )
+              )}
+            </h3>
+            <span className="block opacity-50 !mt-2">
+              {experience.sub_title}
+            </span>
             <p>{experience.text}</p>
             <ul className="flex items-center flex-wrap gap-3">
               {experience.skills.map((skill, skillIndex) => (
