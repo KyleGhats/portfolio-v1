@@ -7,7 +7,7 @@ export const ExperienceSection = () => {
       id: 1,
       title: "Bitshareslabs Inc. | November 2022 - Present",
       sub_title: "Front-end Developer - Full-stack Developer",
-      text: "Developer and designer for various web projects such as kolabspace, cryptosavers club, bitsharelabs, blincph and bibeverse. Also developed and maintained website for various clients such as densenlaw. ",
+      text: "A Front-end developer for various websites using HTML, PHP, Bootstrap, CSS, SASS, and JS in my early deployment then became a full-stack Developer and lead developer for a Virtual Assistant Network web app using Tailwind CSS Framework, JS, HTML, MySQL, AJAX, and PHP as the main developing tools.",
       skills: [
         "php",
         "html",

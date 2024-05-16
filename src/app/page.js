@@ -6,6 +6,7 @@ import { RightSideProfile } from "./components/RightSideProfile";
 import { AboutSection } from "./components/AboutSection";
 import { ExperienceSection } from "./components/ExperienceSection";
 import { ProjectSection } from "./components/ProjectSection";
+import { Socials } from "./components/Socials";
 
 export default function Home() {
     return (
@@ -19,6 +20,7 @@ export default function Home() {
                 <ProjectSection />
             </div>
             <div className="gradient-bg fixed top-0 left-0 right-0 bottom-0 z-10"></div>
+            <Socials />
         </main>
     );
 }
