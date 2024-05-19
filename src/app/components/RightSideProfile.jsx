@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
+
 export const RightSideProfile = () => {
   const navItems = [
     { text: "About", href: "#" },
@@ -27,9 +28,11 @@ export const RightSideProfile = () => {
             ))}
           </ul>
         </div>
-        <div className="space-y-3">
+        <div className="space-y-7">
           <div className=" tracking-[0.2em]">kylegatudan@gmail.com</div>
-          <Link href="#" className="">View Resume</Link>
+          <div>
+            <Link href="resume/Resume(Gatudan).pdf" target="_blank" className="px-4 py-2 border-[#78EF9A] border rounded-md">View Resume</Link>
+          </div>
         </div>
       </div>
     </aside>

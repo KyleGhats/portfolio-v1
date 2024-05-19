@@ -24,7 +24,7 @@ export const ExperienceSection = () => {
       id: 2,
       title: "Freelance | March 2023",
       sub_title: "Front-end Developer",
-      text: "Developed a portfolio website for a PNPA graduating student.",
+      text: "Developed a portfolio website for a cadet student.",
       skills: ["html", "css", "js", "bootstrap"],
     },
     {

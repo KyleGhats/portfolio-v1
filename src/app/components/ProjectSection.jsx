@@ -1,7 +1,13 @@
 import React from "react";
 import { SectionHeader } from "./SectionHeader";
 import Link from "next/link";
-import img from "../../../public/dummy.png";
+import cs1 from "../../../public/projects/cs_2.png";
+import cadet from "../../../public/projects/cadet.png";
+import personal from "../../../public/projects/personal.png";
+import cs2 from "../../../public/projects/sportstxt.png";
+import cuezhe from "../../../public/projects/cuezhe.png";
+import omnifood1 from "../../../public/projects/omnifood1.png";
+import omnifood2 from "../../../public/projects/omnifood2.png";
 import github from "../../../public/github.svg";
 
 import Image from "next/image";
@@ -13,9 +19,9 @@ const projects = [
     description:
       "My own personal website portfolio",
     techStack: ["nextjs", "html", "tailwindcss"],
-    images: img,
-    link: "https://github.com/KyleGhats/portfolio-v1", 
-    github: "#",
+    images: personal,
+    link: "#", 
+    github: "https://github.com/KyleGhats/portfolio-v1",
   },
   {
     id: 2,
@@ -23,7 +29,7 @@ const projects = [
     description:
       "I found a website that had a red, blue and white theme and thought to challenge myself to redesign the website but in dark mode using bootstrap as its framework.",
     techStack: ["bootstrap", "html", "css", "js"],
-    images: img,
+    images: cs2,
     link: "http://sportstxt.infinityfreeapp.com/sportstxt/",
     github: "https://github.com/KyleGhats/sportsTXT",
   },
@@ -33,7 +39,7 @@ const projects = [
     description:
       "This is a design I found in Figma Community that I found simple for me to practice implementing TailwindCSS",
     techStack: ["html", "css", "tailwindcss"],
-    images: img,
+    images: cs1,
     link: "https://case-study1.netlify.app/",
     github: "https://github.com/KyleGhats/case-study",
   },
@@ -42,7 +48,7 @@ const projects = [
     name: "Client Portfolio",
     description: "Portfolio website for a client, it was a requirement before they graduated.",
     techStack: ["bootstrap", "html", "css", "js"],
-    images: img,
+    images: cadet,
     link: "https://kyleghats.github.io/Portfolio-ashleyedduba/",
     github: "https://github.com/KyleGhats/Portfolio-ashleyedduba",
   },
@@ -51,7 +57,7 @@ const projects = [
     name: "Cuezhe",
     description: "This is a static kitchen utensils shopping website UI for a school project. We were assigned to design and build a website using HTML and CSS.",
     techStack: ["html", "css"],
-    images: img,
+    images: cuezhe,
     link: "https://kyleghats.github.io/cuzhe/",
     github: "https://github.com/KyleGhats/cuzhe",
   },
@@ -60,7 +66,7 @@ const projects = [
     name: "Omnifood V1",
     description: "This was an old course by Jonas Schmedtmann in udemy, “Design and Develop a Killer Website Using HTML5 and CSS3 where we built a fictional website called omnifood in the final course.",
     techStack: ["html", "css", "js"],
-    images: img,
+    images: omnifood1,
     link: "https://kyleghats.github.io/omnifood-v1/",
     github: "https://github.com/KyleGhats/omnifood-v1",
   },
@@ -69,7 +75,7 @@ const projects = [
     name: "Omnifood V2",
     description: "This is the latest course of Jonas Schmedtmann in udemy, “Build Responsive Real-World Websites with HTML and CSS3 an updated version of his previous course where we built a fictional website called omnifood in the final course.",
     techStack: ["html", "css", "scss", "js"],
-    images: img,
+    images: omnifood2,
     link: "https://kyleghats.github.io/omnifood-v2/",
     github: "https://github.com/KyleGhats/omnifood-v2",
   },
@@ -83,9 +89,8 @@ export const ProjectSection = () => {
         {projects.map((project) => (
           <div key={project.id} className="space-y-8">
             <div className="flex gap-2 items-center">
-              <Link href={project.link} target="_blank">
-                <div className="flex items-center gap-2">
-                  <span>{project.name}</span>
+              <span>{project.name}</span>
+              <Link href={project.link} target="_blank" className={project.id !== 1 ? "block" : "hidden"}>
                   <svg
                   className=" opacity-70"
                     width="24"
@@ -99,7 +104,6 @@ export const ProjectSection = () => {
                       fill="#62ED89"
                     />
                   </svg>
-                </div>
               </Link>
               <Link href={project.github}>
                   <Image
@@ -107,7 +111,6 @@ export const ProjectSection = () => {
                   width={24}
                   height={24}
                   alt="github icon"
-                  className={project.id !== 1 ? "block" : "hidden"}
                 />
               </Link>
             </div>
