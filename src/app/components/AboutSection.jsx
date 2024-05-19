@@ -1,9 +1,11 @@
 import React from "react";
+import { SectionHeader } from "./SectionHeader";
 
 export const AboutSection = () => {
   return (
-    <section>
-		<div className=" h-0.5 w-14 bg-[#78EF9A] mb-2"></div>
+    <section className="space-y-14">
+      <SectionHeader num="01" title="About"/>
+		{/* <div className=" h-0.5 w-14 bg-[#78EF9A] mb-2"></div> */}
       <div className="space-y-6">
         <p>
           Back in 2016 during my 11th grade, I began my development journey by

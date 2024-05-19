@@ -3,9 +3,9 @@ import React from "react";
 
 export const RightSideProfile = () => {
   const navItems = [
-    { id: "01", text: "About", href: "#" },
-    { id: "02", text: "Experience", href: "#" },
-    { id: "03", text: "Projects", href: "#" },
+    { text: "About", href: "#" },
+    { text: "Experience", href: "#" },
+    { text: "Projects", href: "#" },
   ];
   return (
     <aside className="md:fixed right-0 top-0 h-screen z-30 md:flex items-center justify-center xl:pr-24 lg:pr-20 md:pr-16 pr-10 max-xl:w-96 max-md:w-full">
@@ -29,7 +29,7 @@ export const RightSideProfile = () => {
         </div>
         <div className="space-y-3">
           <div className=" tracking-[0.2em]">kylegatudan@gmail.com</div>
-          <div className="">View Resume</div>
+          <Link href="#" className="">View Resume</Link>
         </div>
       </div>
     </aside>
