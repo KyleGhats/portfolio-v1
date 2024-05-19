@@ -13,7 +13,7 @@ const projects = [
     description:
       "My own personal website portfolio",
     techStack: ["nextjs", "html", "tailwindcss"],
-    images: [img, img, img],
+    images: img,
     link: "https://github.com/KyleGhats/portfolio-v1", 
     github: "#",
   },
@@ -23,7 +23,7 @@ const projects = [
     description:
       "I found a website that had a red, blue and white theme and thought to challenge myself to redesign the website but in dark mode using bootstrap as its framework.",
     techStack: ["bootstrap", "html", "css", "js"],
-    images: [img, img, img],
+    images: img,
     link: "http://sportstxt.infinityfreeapp.com/sportstxt/",
     github: "https://github.com/KyleGhats/sportsTXT",
   },
@@ -33,7 +33,7 @@ const projects = [
     description:
       "This is a design I found in Figma Community that I found simple for me to practice implementing TailwindCSS",
     techStack: ["html", "css", "tailwindcss"],
-    images: [img, img, img],
+    images: img,
     link: "https://case-study1.netlify.app/",
     github: "https://github.com/KyleGhats/case-study",
   },
@@ -42,7 +42,7 @@ const projects = [
     name: "Client Portfolio",
     description: "Portfolio website for a client, it was a requirement before they graduated.",
     techStack: ["bootstrap", "html", "css", "js"],
-    images: [img, img, img],
+    images: img,
     link: "https://kyleghats.github.io/Portfolio-ashleyedduba/",
     github: "https://github.com/KyleGhats/Portfolio-ashleyedduba",
   },
@@ -51,7 +51,7 @@ const projects = [
     name: "Cuezhe",
     description: "This is a static kitchen utensils shopping website UI for a school project. We were assigned to design and build a website using HTML and CSS.",
     techStack: ["html", "css"],
-    images: [img, img, img],
+    images: img,
     link: "https://kyleghats.github.io/cuzhe/",
     github: "https://github.com/KyleGhats/cuzhe",
   },
@@ -60,7 +60,7 @@ const projects = [
     name: "Omnifood V1",
     description: "This was an old course by Jonas Schmedtmann in udemy, “Design and Develop a Killer Website Using HTML5 and CSS3 where we built a fictional website called omnifood in the final course.",
     techStack: ["html", "css", "js"],
-    images: [img, img, img],
+    images: img,
     link: "https://kyleghats.github.io/omnifood-v1/",
     github: "https://github.com/KyleGhats/omnifood-v1",
   },
@@ -69,7 +69,7 @@ const projects = [
     name: "Omnifood V2",
     description: "This is the latest course of Jonas Schmedtmann in udemy, “Build Responsive Real-World Websites with HTML and CSS3 an updated version of his previous course where we built a fictional website called omnifood in the final course.",
     techStack: ["html", "css", "scss", "js"],
-    images: [img, img, img],
+    images: img,
     link: "https://kyleghats.github.io/omnifood-v2/",
     github: "https://github.com/KyleGhats/omnifood-v2",
   },
@@ -113,24 +113,13 @@ export const ProjectSection = () => {
             </div>
             <div className="flex gap-3 md:flex-row flex-col items-center">
               <Image
-                src={project.images[0]}
+                src={project.images}
                 width={420}
                 height={300}
                 alt={project.name}
                 className="rounded-lg border border-[#78EF9A]"
               />
-              <div className="flex md:flex-col max-sm:flex-col gap-3">
-                {project.images.slice(1).map((img, index) => (
-                  <Image
-                    key={index}
-                    src={img}
-                    width={200}
-                    height={100}
-                    alt={project.name}
-                    className="rounded-lg border border-[#78EF9A]"
-                  />
-                ))}
-              </div>
+              
             </div>
             <p>{project.description}</p>
             <ul className="flex items-center flex-wrap gap-3">
