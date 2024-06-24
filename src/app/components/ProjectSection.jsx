@@ -83,7 +83,7 @@ const projects = [
 
 export const ProjectSection = () => {
   return (
-    <section className="space-y-14">
+    <section className="space-y-14 scroll-mt-[4rem]" id="projects">
       <SectionHeader num="03" title="Projects" />
       <div className="space-y-20">
         {projects.map((project) => (
@@ -114,7 +114,7 @@ export const ProjectSection = () => {
                 />
               </Link>
             </div>
-            <div className="flex gap-3 md:flex-row flex-col items-center">
+            <div className="flex gap-3 md:flex-row flex-col md:items-center">
               <Image
                 src={project.images}
                 width={420}
@@ -138,6 +138,7 @@ export const ProjectSection = () => {
           </div>
         ))}
       </div>
+      <div></div>
     </section>
   );
 };

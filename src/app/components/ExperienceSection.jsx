@@ -5,8 +5,8 @@ export const ExperienceSection = () => {
   const experiences = [
     {
       id: 1,
-      title: "Bitshareslabs Inc. | November 2022 - Present",
-      sub_title: "Front-end Developer - Full-stack Developer",
+      title: "Bitshareslabs Inc. | November 2022 - June 2024",
+      sub_title: "Front-end Developer - Web Developer",
       text: "A Front-end developer for various websites using HTML, PHP, Bootstrap, CSS, SASS, and JS in my early deployment then became a full-stack Developer and lead developer for a Virtual Assistant Network web app using Tailwind CSS Framework, JS, HTML, MySQL, AJAX, and PHP as the main developing tools.",
       skills: [
         "php",
@@ -30,14 +30,14 @@ export const ExperienceSection = () => {
     {
       id: 3,
       title: "Internship | May 2022",
-      sub_title: "Junior Developer",
+      sub_title: "Junior Web Developer",
       text: "Proposed and developed an intern management system for Bitshareslabs Inc.",
       skills: ["php", "html", "css", "js"],
     },
   ];
 
   return (
-    <section className=" space-y-14">
+    <section className="scroll-mt-[4rem] space-y-14" id="experience">
       <SectionHeader num="02" title="Experience" />
       <div className=" space-y-12">
         {experiences.map((experience, index) => (

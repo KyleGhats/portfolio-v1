@@ -35,7 +35,7 @@ export const Socials = () => {
 		},
 	]
   return (
-    <div className=" fixed left-7 bottom-0 flex flex-col items-center gap-5 z-50">
+    <div className=" md:flex hidden fixed left-7 bottom-0 flex-col items-center gap-5 z-50">
 		<ul className="flex flex-col items-center gap-5">
 			{socials.map((social) => (
 				<li key={social.id}>

@@ -3,7 +3,7 @@ import { SectionHeader } from "./SectionHeader";
 
 export const AboutSection = () => {
   return (
-    <section className="space-y-14">
+    <section className="space-y-14 scroll-mt-[4rem]" id="about">
       <SectionHeader num="01" title="About"/>
 		{/* <div className=" h-0.5 w-14 bg-[#78EF9A] mb-2"></div> */}
       <div className="space-y-6">
