@@ -3,9 +3,9 @@ import React, { useMemo, useState, useEffect } from "react";
 
 export const RightSideProfile = () => {
   const navItems = useMemo(() => [
-    { id: "about", text: "About" },
-    { id: "experience", text: "Experience" },
-    { id: "projects", text: "Projects" },
+    { no: '01', id: "about", text: "About" },
+    { no: '02', id: "experience", text: "Experience" },
+    { no: '03', id: "projects", text: "Projects" },
   ], []);
 
   const [activeSection, setActiveSection] = useState(null);
@@ -47,14 +47,17 @@ export const RightSideProfile = () => {
     <aside className="md:fixed right-0 top-0 md:h-screen max-md:mb-20 z-30 md:flex items-center justify-center xl:pr-24 lg:pr-20 md:pr-16 pr-10 max-xl:w-96 max-md:w-full">
       <div className="space-y-12">
         <div className=" space-y-4">
-          <span className="">Hi!</span>
-          <h1 className=" sm:text-5xl text-2xl font-bold">Kyle Gatudan</h1>
-          <h4>Web Developer</h4>
-          <p>I am a web developer based in Baguio City, Philippines. </p>
+          <span className=" inline-block">Hi! I am</span>
+          <div className=" sm:space-y-5 space-y-3">
+            <h1 className=" sm:text-5xl text-2xl font-bold">Kyle Gatudan</h1>
+            <h4 className="bg-[#78EF9A] px-2 sm:py-1 py-0.5 inline-block text-[#020F1F] font-semibold uppercase text-sm">Web Developer</h4>
+            <p className="sm:w-[384px]">A web developer based in Baguio City, the coldest city in the Philippines.</p>
+          </div>
           <ul className="space-y-2 md:block hidden">
             {navItems.map((item, index) => (
               <li key={index} className={`${item.id === activeSection ? 'text-[#78EF9A] scale-110' : ''}`}>
                 <Link href={`#${item.id}`} className={`flex items-center gap-3 text-[#3c784d] ${item.id === activeSection ? 'text-[#78EF9A]' : ''}`}>
+                  <span>{item.no}</span>
                   <span className={`inline-block h-0.5 w-12  ${item.id === activeSection ? 'bg-[#78EF9A]' : 'bg-[#3c784d]'}`}></span>
                   <span>{item.text}</span>
                 </Link>

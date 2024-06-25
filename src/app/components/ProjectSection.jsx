@@ -9,6 +9,7 @@ import cuezhe from "../../../public/projects/cuezhe.png";
 import omnifood1 from "../../../public/projects/omnifood1.png";
 import omnifood2 from "../../../public/projects/omnifood2.png";
 import github from "../../../public/github.svg";
+import figma from "../../../public/figma.svg";
 
 import Image from "next/image";
 
@@ -22,6 +23,7 @@ const projects = [
     images: personal,
     link: "#", 
     github: "https://github.com/KyleGhats/portfolio-v1",
+    figma: "https://www.figma.com/design/aZg1EZBuCjDpNxp70b7LSv/Portfolio-V1?node-id=0-1&t=sQ4l6NaZasZ0fhWL-1",
   },
   {
     id: 2,
@@ -32,6 +34,7 @@ const projects = [
     images: cs2,
     link: "http://sportstxt.infinityfreeapp.com/sportstxt/",
     github: "https://github.com/KyleGhats/sportsTXT",
+    figma: "https://www.figma.com/design/B6YqNuzXp0VlbfqLTazsRf/CaseStudy?t=oLVzvBcoQEhREve2-1",
   },
   {
     id: 3,
@@ -42,6 +45,7 @@ const projects = [
     images: cs1,
     link: "https://case-study1.netlify.app/",
     github: "https://github.com/KyleGhats/case-study",
+    figma: "",
   },
   {
     id: 4,
@@ -51,6 +55,7 @@ const projects = [
     images: cadet,
     link: "https://kyleghats.github.io/Portfolio-ashleyedduba/",
     github: "https://github.com/KyleGhats/Portfolio-ashleyedduba",
+    figma: "",
   },
   {
     id: 5,
@@ -60,6 +65,7 @@ const projects = [
     images: cuezhe,
     link: "https://kyleghats.github.io/cuzhe/",
     github: "https://github.com/KyleGhats/cuzhe",
+    figma: "",
   },
   {
     id: 6,
@@ -69,6 +75,7 @@ const projects = [
     images: omnifood1,
     link: "https://kyleghats.github.io/omnifood-v1/",
     github: "https://github.com/KyleGhats/omnifood-v1",
+    figma: "",
   },
   {
     id: 7,
@@ -78,6 +85,7 @@ const projects = [
     images: omnifood2,
     link: "https://kyleghats.github.io/omnifood-v2/",
     github: "https://github.com/KyleGhats/omnifood-v2",
+    figma: "",
   },
 ];
 
@@ -104,8 +112,9 @@ export const ProjectSection = () => {
                       fill="#62ED89"
                     />
                   </svg>
+                  
               </Link>
-              <Link href={project.github}>
+              <Link href={project.github} target="_blank">
                   <Image
                   src={github}
                   width={24}
@@ -113,16 +122,28 @@ export const ProjectSection = () => {
                   alt="github icon"
                 />
               </Link>
+              { (project.id === 1 || project.id === 2) &&
+                (<Link href={project.figma} target="_blank">
+                    <Image
+                        className="opacity-75"
+                        src={figma}
+                        width={16}
+                        height={16}
+                        alt="figma icon"
+                      />
+                  </Link>
+                )}
             </div>
             <div className="flex gap-3 md:flex-row flex-col md:items-center">
-              <Image
-                src={project.images}
-                width={420}
-                height={300}
-                alt={project.name}
-                className="rounded-lg border border-[#78EF9A]"
-              />
-              
+              <Link href={project.github} target="_blank">
+                  <Image
+                    src={project.images}
+                    width={420}
+                    height={300}
+                    alt={project.name}
+                    className="rounded-lg border border-[#78EF9A]"
+                  />
+              </Link>
             </div>
             <p>{project.description}</p>
             <ul className="flex items-center flex-wrap gap-3">
