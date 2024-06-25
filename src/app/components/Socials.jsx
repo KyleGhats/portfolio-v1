@@ -12,26 +12,26 @@ export const Socials = () => {
 		{
 			id: 1,
 			icon: github,
-			alt: "",
-			link: "#"
+			alt: "github icon",
+			link: "https://github.com/KyleGhats"
 		},
 		{
 			id: 2,
 			icon: linkedin,
-			alt: "",
-			link: "#"
+			alt: "linkedin icon",
+			link: "https://www.linkedin.com/in/kyle-gatudan-81bb09244/"
 		},
 		{
 			id: 3,
 			icon: instagram,
-			alt: "",
-			link: "#"
+			alt: "instagram icon",
+			link: "https://www.instagram.com/kyleghats/"
 		},
 		{
 			id: 4,
 			icon: codepen,
-			alt: "",
-			link: "#"
+			alt: "codepen icon",
+			link: "https://codepen.io/KairuChaaan"
 		},
 	]
   return (
@@ -39,7 +39,7 @@ export const Socials = () => {
 		<ul className="flex flex-col items-center gap-5">
 			{socials.map((social) => (
 				<li key={social.id}>
-					<Link href={social.link}>
+					<Link href={social.link} target="_blank">
 						<Image 
 							src={social.icon}   
 							width={32}
