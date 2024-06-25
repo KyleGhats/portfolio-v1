@@ -7,9 +7,9 @@ import { useState, useEffect } from 'react';
 
 export const RightSideProfile = () => {
   const navItems = [
-    { text: "About", href: "about" },
-    { text: "Experience", href: "experience" },
-    { text: "Projects", href: "projects" },
+    { id: "about", text: "About" },
+    { id: "experience", text: "Experience" },
+    { id: "projects", text: "Projects" },
   ];
 
   const [activeSection, setActiveSection] = useState(null);
@@ -19,11 +19,11 @@ export const RightSideProfile = () => {
 
       // Determine which section is currently active
       const sections = navItems.map(item => {
-        const sectionElement = document.getElementById(item.href);
+        const sectionElement = document.getElementById(item.id);
         if (sectionElement) {
           const { top, height } = sectionElement.getBoundingClientRect();
           return {
-            id: item.href,
+            id: item.id,
             top,
             bottom: top + height
           };
@@ -58,7 +58,7 @@ export const RightSideProfile = () => {
           <ul className="space-y-2 md:block hidden">
             {navItems.map((item, index) => (
               <li key={index} className={`${item.id === activeSection ? 'text-[#78EF9A] scale-110' : ''}`}>
-                <Link href={`#${item.href}`} className={`flex items-center gap-3 text-[#3c784d] ${item.id === activeSection ? 'text-[#78EF9A]' : ''}`}>
+                <Link href={`#${item.id}`} className={`flex items-center gap-3 text-[#3c784d] ${item.id === activeSection ? 'text-[#78EF9A]' : ''}`}>
                   <span className={`inline-block h-0.5 w-12  ${item.id === activeSection ? 'bg-[#78EF9A]' : 'bg-[#3c784d]'}`}></span>
                   <span>{item.text}</span>
                 </Link>

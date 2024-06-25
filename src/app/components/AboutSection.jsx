@@ -15,14 +15,13 @@ export const AboutSection = () => {
         </p>
         <p>
           After completing an internship in 2022, I was fortunate enough to join
-          Bitsharelabs Inc., the company where I interned, as a full-time
-          employee.
+          BLINC, the company where I interned, as a full-time
+          web developer.
         </p>
         <p>
           Now, I've gained extensive experience in building and converting web
           designs for clients, working with back-end technologies like PHP and
-          Node.js, and I've also progressed to become a team lead and intern
-          supervisor.{" "}
+          Node.js. Additionally, I have advanced to the roles of team lead and intern supervisor.
         </p>
         <p>
           In my spare time, I like to keep up with the latest technologies,
