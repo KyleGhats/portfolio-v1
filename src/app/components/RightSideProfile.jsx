@@ -1,16 +1,12 @@
 import Link from "next/link";
-import React from "react";
-import { useState, useEffect } from 'react';
-
-
-  
+import React, { useMemo, useState, useEffect } from "react";
 
 export const RightSideProfile = () => {
-  const navItems = [
+  const navItems = useMemo(() => [
     { id: "about", text: "About" },
     { id: "experience", text: "Experience" },
     { id: "projects", text: "Projects" },
-  ];
+  ], []);
 
   const [activeSection, setActiveSection] = useState(null);
   useEffect(() => {
