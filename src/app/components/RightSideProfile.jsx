@@ -7,9 +7,9 @@ import { useState, useEffect } from 'react';
 
 export const RightSideProfile = () => {
   const navItems = [
-    { id: "about", text: "About", href: "about" },
-    { id: "experience", text: "Experience", href: "experience" },
-    { id: "projects", text: "Projects", href: "projects" },
+    { text: "About", href: "about" },
+    { text: "Experience", href: "experience" },
+    { text: "Projects", href: "projects" },
   ];
 
   const [activeSection, setActiveSection] = useState(null);
@@ -52,7 +52,7 @@ export const RightSideProfile = () => {
       <div className="space-y-12">
         <div className=" space-y-4">
           <span className="">Hi!</span>
-          <h1 className=" sm:text-5xl text-2xl font-bold">Kyle </h1>
+          <h1 className=" sm:text-5xl text-2xl font-bold">Kyle Gatudan</h1>
           <h4>Web Developer</h4>
           <p>I am a web developer based in Baguio City, Philippines. </p>
           <ul className="space-y-2 md:block hidden">
@@ -67,7 +67,7 @@ export const RightSideProfile = () => {
           </ul>
         </div>
         <div className="space-y-7">
-          <div className=" tracking-[0.2em]">email@gmail.com</div>
+          <div className=" tracking-[0.2em]">kylegatudan@gmail.com</div>
           <div>
             <Link href="resume/Resume(Gatudan).pdf" target="_blank" className="px-4 py-2 border-[#78EF9A] border rounded-md md:inline-block hidden">View Resume</Link>
           </div>
