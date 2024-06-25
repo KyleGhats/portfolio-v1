@@ -1,8 +1,22 @@
 This is my personal portfolio made with nextjs.
 
+## Live:
+
+Url: [https://www.kylegatudan.com/](https://www.kylegatudan.com/)
+
 ## Getting Started
 
-First, run the development server:
+First, install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+Then run the development server:
 
 ```bash
 npm run dev
@@ -10,8 +24,6 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
