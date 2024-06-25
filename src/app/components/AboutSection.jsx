@@ -19,7 +19,7 @@ export const AboutSection = () => {
           web developer.
         </p>
         <p>
-          Now, I've gained extensive experience in building and converting web
+          Now, I&apos;ve gained extensive experience in building and converting web
           designs for clients, working with back-end technologies like PHP and
           Node.js. Additionally, I have advanced to the roles of team lead and intern supervisor.
         </p>
