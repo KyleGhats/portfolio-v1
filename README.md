@@ -1,3 +1,5 @@
+# Version 1
+
 This is my personal portfolio made with nextjs.
 
 ## Live:
