@@ -4,7 +4,7 @@ This is my personal portfolio made with nextjs.
 
 ## Live:
 
-Url: [https://www.kylegatudan.com/](https://www.kylegatudan.com/)
+Url: [https://www.kylegatudan.com/](https://www.kylegatudan.com/](https://portfolio-v1-alpha-rose.vercel.app/))
 
 ## Getting Started
 
