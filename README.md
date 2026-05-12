@@ -6,6 +6,10 @@ This is my personal portfolio made with nextjs.
 
 Url: [Go to live site](https://portfolio-v1-alpha-rose.vercel.app/)
 
+## My Version 2 is live now
+
+[kylegatudan.com](https://kylegatudan.com/)
+
 ## Getting Started
 
 First, install dependencies:
